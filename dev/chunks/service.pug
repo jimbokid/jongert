@@ -1,0 +1,70 @@
+section.service-posts.section-dft
+    .container
+        .section-title.service-posts__title Service
+        .service-posts__sub-title.text-dft-small
+            | While all new builds at Jongert have a two-year warranty,
+            br
+            |  our support continues regardless of the yacht’s age.
+        .row
+            .col-md-3.service-posts__item
+                .service-posts__img.service-posts__img--helm
+                    +icon ('helm')
+                p.text-dft-small.service-posts__text.
+                    Wherever you may go in the world, the Jongert service team is on hand to offer maximum support to Jongert superyachts. The service department is staffed by veterans of the company, people with decades of experience at the Jongert yard and of the yachts built here.
+            .col-md-3.col-md-offset-1.service-posts__item
+                .service-posts__img.service-posts__img--anchor
+                    +icon ('anchor')
+                p.text-dft-small.service-posts__text.
+                    The experience of the Jongert service engineers and the well-maintained data on our yachts enables the service team to work quickly and efficiently. This applies both to the state-of-the-art yard in Wieringerwerf and our ability to travel the world round-the-clock in order to support you and your crew.
+            .col-md-3.col-md-offset-1.service-posts__item
+                .service-posts__img.service-posts__img--lifebuoy
+                    +icon ('lifebuoy')
+                p.text-dft-small.service-posts__text.
+                    As Jongert has carefully stored all data, your yacht does not necessarily have to come to the yard. Many relatively small adjustments or spare parts can be prepared at the yard and then shipped to any location in the world. A Jongert service engineer can install these on location or guide your technician through the installation.
+        a(href="#").btn-rnd.btn-rnd--gold Find service department
+
+section.contact-us
+    .container
+        h2.contact-us__title Contact us
+        .text-dft-small.contact-us__text
+            span.
+                E-mail:
+            a(href="#").
+                info@jongert.com
+        .text-dft-small.contact-us__text
+            span.
+                Phohe:
+            a(href="#").
+                +31 (0) 227 549 400
+
+        .contact-us-form
+            form.js-contact-form
+                .row.contact-us-form__row.contact-us-form__top-row
+                    .col-xl-2.col-lg-4.col-md-4
+                        .contact-us-form__message-text Send a message to
+                    .col-xl-2.col-lg-4.col-md-4.contact-us-form__service-wrap
+                        select.custom-select.contact-us-form__service(name='sources', placeholder='jongert service')
+                            option(value='jongert service 1') jongert service 1
+                            option(value='jongert service 2') jongert service 2
+                            option(value='jongert service 3') jongert service 3
+                            option(value='jongert service 4') jongert service 4
+                .row.contact-us-form__row
+                    .col-xl-4.col-lg-8.col-md-8
+                        input(type="text" placeholder="Name" name="name").input-dft.gold
+                .row.contact-us-form__row
+                    .col-xl-2.col-lg-4.col-md-4
+                        input(type="text" placeholder="Phone number" name="phone").input-dft.gold
+                    .col-xl-2.col-lg-4.col-md-4
+                        input(type="text" placeholder="E-mail" name="email").input-dft.gold
+                .row.contact-us-form__row
+                    .col-xl-4.col-lg-8.col-md-8
+                        .contact-us-form__label What is yor yacht?
+                        select.custom-select(name='sources', placeholder='Choose your model')
+                            option(value='volvo') Volvo
+                            option(value='saab') Saab
+                            option(value='mercedes') Mercedes
+                            option(value='audi') Audi
+                .row.contact-us-form__row
+                    .col-xl-4.col-lg-8.col-md-8
+                        input(type="text" placeholder="Describe your problem" name="text").input-dft.gold
+                button.contact-us-form__submit.btn-rnd.btn-rnd--gold(type='submit') Send

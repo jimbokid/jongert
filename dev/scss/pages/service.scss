@@ -1,0 +1,65 @@
+.service-posts {
+    padding: 10px 0 68px;
+    @media (max-width: $screen-sm-max) {
+        padding-bottom: 20px;
+        padding-top: 27px;
+    }
+
+    &__title {
+        margin-bottom: 55px;
+        @media (max-width: $screen-sm-max) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__sub-title {
+        margin-bottom: 83px;
+        color: $blue;
+        @media (max-width: $screen-sm-max) {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__item {
+        margin-bottom: 60px;
+        margin-bottom: 45px;
+    }
+
+    &__img {
+        height: 150px;
+        margin-bottom: 45px;
+
+        &--helm {
+            svg {
+                width: 150px;
+            }
+        }
+
+        &--anchor {
+            svg {
+                width: 123px;
+            }
+        }
+
+        &--lifebuoy {
+            svg {
+                width: 156px;
+            }
+        }
+
+        svg {
+            height: 100%;
+            @media (max-width: $screen-sm-max) {
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    }
+
+    &__text {
+        @media (max-width: $screen-sm-max) {
+            font-size: 20px;
+        }
+    }
+}

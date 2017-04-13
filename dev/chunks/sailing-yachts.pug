@@ -1,0 +1,198 @@
+section.sailing-head
+    .main-head__center.main-head__center--sailing(style="background: url('img/upload/main-2.jpg') no-repeat;background-size: cover;")
+        .container
+            .row
+                .col-md-8.col-md-offset-4.col-lg-6.col-lg-offset-6
+                    .banner-title.banner-title--small.main-head__center-title
+                        span.
+                            Sailing
+                        span.
+                            Yachts
+                    .main-head__center-text-wrapper
+                        .main-head__center-text.
+                            Our core business, building state of the art sailing <br>
+                            yachts that offer the world's finest comfort, quality and <br>
+                            performance levels.
+
+                        .main-head__center-text.
+                            For their stunning looks, outstanding performance, their <br>
+                            sleek and smooth design, the comfort and quality, the <br>
+                                perfect silhouette. Made in Holland, by nature highly <br> innovative. The best way to travel the seas and enjoy the <br> boating experience. Jongert Yachts just love to be at sea.
+section.details.section-dft
+    .container
+        .details__main-item
+            a(href="#").details__item.clearfix
+                .details__img-wrapper
+                    img(src="img/upload/detail-1.jpg" alt="detail image")
+                .details__text-wrapper
+                    .details__text
+                        .details__title.
+                            Performance
+                        .details__preview.text-dft-small.
+                            With a Performance Line yacht you can
+                            circumnavigate the world and win races
+                            along the way… The Jongert way!
+                        span.details__link.
+                            Details
+            a(href="#").details__item.clearfix
+                .details__img-wrapper
+                    img(src="img/upload/detail-3.jpg" alt="detail image")
+                .details__text-wrapper
+                    .details__text
+                        .details__title.
+                            Traditional
+                        .details__preview.text-dft-small.
+                            With a Performance Line yacht you can
+                            circumnavigate the world and win races
+                            along the way… The Jongert way!
+                        span.details__link.
+                            Details
+        .details__main-item
+            a(href="#").details__item.clearfix
+                .details__img-wrapper
+                    img(src="img/upload/detail-2.jpg" alt="detail image")
+                .details__text-wrapper
+                    .details__text
+                        .details__title.
+                            Cruising
+                        .details__preview.text-dft-small.
+                            Enjoy  countless innovative features that make sailing and living aboard exceptionally
+                            comfortable, distinctive and relaxed.
+                        span.details__link.
+                            Details
+            a(href="#").details__item.clearfix
+                .details__img-wrapper
+                    img(src="img/upload/detail-4.jpg" alt="detail image")
+                .details__text-wrapper
+                    .details__text
+                        .details__title.
+                            Specials
+                        .details__preview.text-dft-small.
+                            With a Performance Line yacht you can
+                            circumnavigate the world and win races
+                            along the way… The Jongert way!
+                        span.details__link.
+                            Details
+section.featured.section-dft
+    .container
+        .section-title Featured
+
+        .row
+            .clearfix
+                .teamslider-mobile-arrows.show-sm
+                    a(href="#" data-slider="slickPrev").js-teamslide-arrow.teamslider-mobile-arrows__btn.teamslider-mobile-arrows__btn--prev
+                        +icon('left-arrow')
+                    a(href="#" data-slider="slickNext").js-teamslide-arrow.teamslider-mobile-arrows__btn.teamslider-mobile-arrows__btn--next
+                        +icon('right-arrow')
+            .teamslider-mobile.js-teamslide-mobile
+                - for (var x = 0; x < 6; x++)
+                    .teamslider-mobile__slide
+                        .text-inner-wrap.featured__text-wrap
+                            .featured__title 3200 p
+                            .featured__type Perfomance
+                            .featured__text
+                                | One of the most exciting and sophisticated Jongert yachts ever...
+                                div
+                                .featured__share.share-link Share
+                                    .share-dropdown
+                                        .share-dropdown__wrapper
+                                            .share-dropdown__title Share in socials
+                                            .share-dropdown__list.clearfix
+                                                a(href="#").share-dropdown__social-link
+                                                    +icon ('facebook')
+                                                a(href="#").share-dropdown__social-link
+                                                    +icon ('tweater')
+                                                a(href="#").share-dropdown__social-link
+                                                    +icon ('linkedin')
+                            a(href="#").featured__link.btn-rnd.btn-rnd--gold details
+
+                        .teamslider-mobile__image
+                            img(src='img/upload/featured-1.jpg', alt='').teamslider-mobile__image-slide
+                            .featured__image-links-wrapper.detail-head__links-wrapper
+                                a(href="#").featured__image-link
+                                    //- +icon ('show-video')
+                                    img(src="img/video-icon.png")
+                                a(href="#").featured__image-link
+                                    img(src="img/3d-tour-icon.png")
+                                    //- +icon ('tour')
+        .teamslider-wrap
+            .team-img-inner
+                - for (var y = 0; y < 6; y++)
+                    .img-inner-wrap
+                        .featured__boat-name.
+                            45C Wellenreiter
+                        div.image-wrapper
+                            img(src='img/upload/featured-1.jpg', alt='').teamslider-wrap__image
+                        .featured__image-links-wrapper
+                            a(href="#").featured__image-link
+                                //- +icon ('show-video')
+                                img(src="img/video-icon.png")
+                            a(href="#").featured__image-link
+                                img(src="img/3d-tour-icon.png")
+                                //- +icon ('tour')
+
+            .col-xs-12.col-sm-12.col-md-12.col-lg-9.col-xl-7.featured__text-wrapper
+                .team-text-inner
+                    - for (var z = 0; z < 6; z++)
+                        .text-inner-wrap.featured__text-wrap
+                            a(href="#").featured__link.btn-rnd.btn-rnd--gold details
+                            .featured__title 3200 p
+                            .featured__type Perfomance
+                            .featured__text
+                                | One of the most exciting and sophisticated Jongert yachts ever...
+                            .featured__share.share-link Share
+                                .share-dropdown
+                                    .share-dropdown__wrapper
+                                        .share-dropdown__title Share in socials
+                                        .share-dropdown__list.clearfix
+                                            a(href="#").share-dropdown__social-link
+                                                +icon ('facebook')
+                                            a(href="#").share-dropdown__social-link
+                                                +icon ('tweater')
+                                            a(href="#").share-dropdown__social-link
+                                                +icon ('linkedin')
+        .team-wrap
+            span.arrow-left
+                +icon ('left-arrow')
+            span.arrow-right
+                +icon ('right-arrow')
+section.latest-news
+    .container
+        .banner-title.banner-title--xsmall.latest-news__title.
+            Latest news
+        .row
+            .col-md-4.latest-news__item
+                a(href="#").latest-news__image-wrap.news-link
+                    img(src="img/upload/news-1.jpg" title="news" alt="news image").latest-news__image
+                    span.latest-news__news-type.
+                        news
+                .latest-news__date.
+                    June, 25, 2016
+                a(href="#").latest-news__preview.
+                    Successful Jongert Mallorca inauguration during Superyacht Cup
+            .col-md-4.latest-news__item
+                a(href="#").latest-news__image-wrap.videos
+                    img(src="img/upload/news-2.jpg" title="news" alt="news image").latest-news__image
+                    span.latest-news__news-type.
+                        videos
+                    span.latest-news__icon
+                .latest-news__date.
+                    June, 25, 2016
+                a(href="#").latest-news__preview.
+                    Tommy: 18 meters of distinctive Jongert Motor Yacht craftsmanship
+            .col-md-4.latest-news__item
+                a(href="#").latest-news__image-wrap.events
+                    img(src="img/upload/news-3.jpg" title="news" alt="news image").latest-news__image
+                    span.latest-news__news-type.
+                        events
+                    span.latest-news__events-info.
+                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.
+                    span.latest-news__events-format.
+                        PDF
+
+                .latest-news__date.
+                    June, 25, 2016
+                a(href="#").latest-news__preview.
+                    Tommy: 18 meters of distinctive Jongert Motor Yacht craftsmanship
+        a(href="#").btn-rnd.btn-rnd--gold.
+            more news

@@ -1,0 +1,110 @@
+.contact-us {
+    position: relative;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 119px;
+    @media (max-width: $screen-sm-max) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    &:before {
+        content: '';
+        @include position(absolute,147px null null 50%);
+        background: $lightgrey;
+        width: 100%;
+        height: 90%;
+        // top: inherit;
+        // bottom: 0;
+        transform: skewX(19deg) translateX(-107px);
+        transform-origin: 0 0;
+        z-index: -1;
+        @media (max-width: $screen-sm-max){
+            top: 113px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 38px;
+        font-family: $intro;
+        color: $gold;
+        font-size: 40px;
+        font-weight: 100;
+    }
+
+    &__text {
+        margin-bottom: 0;
+        color: $gold;
+        font-family: $opensanscondlight;
+
+        span {
+            display: inline-block;
+            margin-right: 26px;
+        }
+
+        a {
+            color: $gold;
+            text-decoration: none;
+        }
+    }
+}
+
+.contact-us-form {
+    margin-top: 78px;
+    @media (max-width: $screen-sm-max){
+        margin-top: 25px;
+    }
+
+    &__row {
+        margin-bottom: 40px;
+        @media (max-width: $screen-sm-max){
+            margin-bottom: 0;
+        }
+    }
+
+    &__label {
+        color: $gold;
+        font-family: $opensanscondlight;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 2px;
+    }
+
+    &__message-text {
+        color: $gold;
+        font-family: $opensanscondlight;
+        font-size: 30px;
+        @media (max-width: 1440px) {
+            font-size: 25px;
+        }
+    }
+
+    &__service {
+        .custom-select-trigger {
+            font-family: $opensanscondbold;
+            font-size: 15px;
+            text-transform: uppercase;
+            border-bottom: none;
+        }
+    }
+
+    &__service-wrap {
+        padding-left: 68px;
+        @media (max-width: 1440px) {
+            padding-left: 15px;
+            position: relative;
+            top: -5px;
+        }
+    }
+
+    &__top-row {
+        margin-bottom: 52px;
+        @media (max-width: $screen-sm-max){
+            margin-bottom: 5px;
+        }
+    }
+
+    &__submit {
+        margin-top: 20px;
+    }
+}

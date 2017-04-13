@@ -1,0 +1,13 @@
+doctype html
+include ../chunks/mixin.pug
+html(lang="ru").no-js
+    head
+        include ../chunks/head.pug
+    block body
+        .page-wrapper.inner-page#page-wrapper
+            include ../chunks/header-inner.pug
+            .page-body#page-body
+                include ../chunks/service.pug
+            include ../chunks/footer.pug
+
+    include ../chunks/scripts.pug

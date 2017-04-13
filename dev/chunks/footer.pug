@@ -1,0 +1,71 @@
+footer.footer#footer
+    .container
+        .row
+            .col-md-9.js-height
+                .informed
+                    .informed__title.
+                        Do you want to stay informed about what’s happening at Jongert?
+                    .informed__sub-title.
+                        Get in touch with us and learn more
+                    .informed__form-wrapper.clearfix
+                        form
+                            .informed__form-group
+                                input(type="text" placeholder="E-mail").input-dft.informed__input
+                            .informed__form-group
+                                button(type="submit").btn-rnd.btn-rnd--white.informed__submit subscribe
+            .col-md-3.js-height
+                .download-links__main-wrapper
+                    .download-links.clearfix
+                        a(href="#").download-links__item
+                            +icon('apple-logo')
+                            span.download-links__text-wrapper
+                                span.download-links__top.
+                                    Download on the
+                                span.download-links__bottom.
+                                    App Store
+                        a(href="#").download-links__item
+                            +icon('android-logo')
+                            span.download-links__text-wrapper
+                                span.download-links__top.
+                                    get it the
+                                span.download-links__bottom.
+                                    Google Play
+
+    .container
+        .row
+            .col-lg-3.col-md-6.js-height.footer__items
+                .footer__company-name
+                    i.footer__logo-icon
+                        +icon ('logo-late')
+                .footer__info
+                    | Copyright ©2015-2017 Jongert. <br>
+                    a(href="#").footer__info-link
+                        span Disclaimer
+                    | made with webtrend
+            .col-lg-3.col-md-6.js-height.footer__items
+                .footer__title.
+                    Jongert Shipyard
+                .footer__info.
+                    Jongert Shipyard Kluisgat <br>
+                    11771 MV Wieringerwerf <br>
+                    The Netherlands
+            .col-lg-3.col-md-6.js-height.footer__items
+                .footer__title.
+                    Sales and services
+                .footer__info
+                    a(href="tel:+31(0)227549400") +31(0) 227 549 400
+                    a(href="mailto:info@jongert.com") info@jongert.com
+                    a(href="#").footer__info-link
+                        span Contact us
+            .col-lg-3.col-md-6.js-height.footer__items
+                .footer__title.
+                    Social
+                .footer__social-links
+                    a(href="#").footer__social-link
+                        +icon ('facebook')
+                    a(href="#").footer__social-link
+                        +icon ('tweater')
+                    a(href="#").footer__social-link
+                        +icon ('linkedin')
+                    a(href="#").footer__social-link
+                        +icon ('youtube')

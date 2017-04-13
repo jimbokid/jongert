@@ -1,0 +1,33 @@
+@font-face {
+	font-family: 'Open Sans Condensed Bold';
+	src: url('fonts/OpenSans-CondensedBold/OpenSans-CondensedBold.eot');
+	src: url('fonts/OpenSans-CondensedBold/OpenSans-CondensedBold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/OpenSans-CondensedBold/OpenSans-CondensedBold.woff') format('woff'),
+		url('fonts/OpenSans-CondensedBold/OpenSans-CondensedBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans Condensed Light';
+	src: url('fonts/OpenSans-CondensedLight/OpenSans-CondensedLight.eot');
+	src: url('fonts/OpenSans-CondensedLight/OpenSans-CondensedLight.eot?#iefix') format('embedded-opentype'),
+		url('fonts/OpenSans-CondensedLight/OpenSans-CondensedLight.woff') format('woff'),
+		url('fonts/OpenSans-CondensedLight/OpenSans-CondensedLight.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro';
+	src: url('fonts/Intro/Intro.eot');
+	src: url('fonts/Intro/Intro.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Intro/Intro.woff') format('woff'),
+		url('fonts/Intro/Intro.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+$opensanscondbold: 'Open Sans Condensed Bold',sans-serif;
+$opensanscondlight: 'Open Sans Condensed Light',sans-serif;
+$intro: 'Intro';

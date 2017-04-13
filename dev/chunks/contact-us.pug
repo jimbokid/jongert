@@ -1,0 +1,38 @@
+section.contact-us
+    .container
+        h2.contact-us__title Contact us
+        p.contact-us__text E-mail:	info@jongert.com
+        p.contact-us__text Phohe:	+31 (0) 227 549 400
+
+
+        .contact-us-form
+            form
+                .row.contact-us-form__row
+                    .col-md-2
+                        .contact-us-form__message-text Send a message to
+                    .col-md-2
+                        select.custom-select(name='sources', placeholder='Choose your model')
+                            option(value='volvo') Volvo
+                            option(value='saab') Saab
+                            option(value='mercedes') Mercedes
+                            option(value='audi') Audi
+                .row.contact-us-form__row
+                    .col-md-4
+                        input(type="text" placeholder="Name").input-dft.gold
+                .row.contact-us-form__row
+                    .col-md-2
+                        input(type="text" placeholder="Pnone number").input-dft.gold
+                    .col-md-2
+                        input(type="text" placeholder="E-mail").input-dft.gold
+                .row.contact-us-form__row
+                    .col-md-4
+                        .contact-us-form__label What is yor yacht?
+                        select.custom-select(name='sources', placeholder='Choose your model')
+                            option(value='volvo') Volvo
+                            option(value='saab') Saab
+                            option(value='mercedes') Mercedes
+                            option(value='audi') Audi
+                .row.contact-us-form__row
+                    .col-md-4
+                        input(type="text" placeholder="Describe your problem").input-dft.gold
+                button.btn-rnd.btn-rnd--gold.informed__submit(type='submit') Send

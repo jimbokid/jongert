@@ -1,0 +1,219 @@
+// $gold: #caaa66;
+// $blue: #003353;
+// $lightgrey: #f4f4f4;
+// $darkgrey: #ced0d4;
+// $gradient: -webkit-linear-gradient( 90deg, rgb(142,110,73) 0%, rgb(222,190,112) 100%);
+// $darkgold: #9b7b4f;
+
+.refit {
+    padding-top: 10px;
+    @media (max-width: $screen-sm-max) {
+        padding-top: 27px;
+    }
+
+    &__body {
+        @media (min-width: $screen-lg-min)and(max-width: $screen-lg-max) {
+            &:before {
+                display: block;
+                content: "";
+                width: 1px;
+                float: right;
+                height: 145px;
+                clear: both;
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 56px;
+    }
+
+    &__sub-title {
+        @media (max-width: $screen-lg-max) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__text-wrapper {
+        p {
+            @media (max-width: $screen-lg-max) {
+                margin-bottom: 10px;
+            }
+        }
+        @media (max-width: $screen-md-max) {
+            clear: both;
+            padding-top: 25px;
+        }
+    }
+
+    &__right-name {
+        @include position(absolute,null null null 15px);
+        z-index: 1;
+        color: #fff;
+        margin-bottom: 0;
+        @media (max-width: $screen-lg-max) {
+            font-size: 25px;
+            left: 15px;
+        }
+        @media (max-width: $screen-md-max) {
+            font-size: 18px;
+        }
+        @media (max-width: $screen-sm-max) {
+            text-align: center;
+        }
+
+        &--top {
+            top: -6px;
+            @media (max-width: $screen-lg-max) {
+                top: -3px;
+            }
+            @media (max-width: $screen-sm-max) {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                font-size: 20px;
+            }
+        }
+
+        &--center {
+            top: 50%;
+            transform: translateY(-50%);
+            @media (max-width: $screen-sm-max) {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                font-size: 20px;
+            }
+        }
+
+        &--bottom {
+            bottom: -6px;
+            @media (max-width: $screen-lg-max) {
+                bottom: -3px;
+            }
+            @media (max-width: $screen-sm-max) {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                font-size: 20px;
+                bottom: auto;
+            }
+        }
+    }
+
+    &__blocks-wrapper {
+        float: right;
+    }
+
+    &__right-wrap {
+        @include aspect-ratio(352,300);
+        @include linear-gradient(to left, rgb(142,110,73), rgb(222,190,112));
+        width: 25%;
+        float: right;
+        overflow: hidden;
+        @media (max-width: $screen-sm-max) {
+            float: left;
+            width: 100%;
+        }
+
+        img {
+            @include position(absolute, 0 0 0 0);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &:nth-child(1) {
+            margin-top: 10px;
+            @media (max-width: $screen-lg-max){
+                clear: both;
+            }
+            @media (max-width: $screen-sm-max) {
+                margin-top: 0;
+            }
+
+        }
+
+        &:nth-child(1),
+        &:nth-child(3),
+        &:nth-child(6) {
+            margin-left: 8%;
+            @media (max-width: $screen-lg-max) {
+                margin-left: 3%;
+            }
+            @media (max-width: $screen-sm-max) {
+                margin-left: 0;
+            }
+        }
+
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(7) {
+            clear: right;
+            @media (max-width: $screen-sm-max) {
+                clear: none;
+            }
+        }
+
+        &:nth-child(7) {
+            margin-right: 25%;
+            @media (max-width: $screen-sm-max) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.contact-us-refit {
+    padding-top: 110px;
+    padding-bottom: 87px;
+    @media (max-width: $screen-lg-max) {
+        padding-top: 46px;
+        padding-bottom: 53px;
+    }
+    @media (max-width: $screen-md-max) {
+        padding-top: 25px;
+        padding-bottom: 60px;
+    }
+
+    &__title {
+        color: $gold;
+    }
+
+    &__text {
+        color: $gold;
+        max-width: 80%;
+        float: left;
+    }
+
+    &__text-wrapper {}
+
+    &__btn {
+        float: right;
+        @media (max-width: $screen-md-max) {
+            float: none;
+            margin-top: 20px;
+        }
+    }
+}
+
+.refited-yachts {
+    margin-bottom: 120px;
+    @media (max-width: $screen-sm-max) {
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        margin-bottom: 55px;
+        @media (max-width: $screen-sm-max) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 82px;
+        @media (max-width: $screen-sm-max) {
+            margin-bottom: 20px;
+        }
+    }
+}

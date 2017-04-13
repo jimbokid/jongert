@@ -1,0 +1,348 @@
+section.detail-top-section
+    .detail-head
+
+        .container.detail-head--container
+
+            .detail-head__wrapper()
+                img(src="img/upload/detail-head.jpg").detail-head__image
+                .row
+                    .detail-head__wrap.col-md-4
+                        .detail-head__name.banner-title.banner-title--small.banner-title--blue.
+                            40 t
+                        .detail-head__text.text-dft.text-dft--blue.
+                            Designed and built to satisfy <br>
+                            the highest demands for a super yacht...
+                .featured__image-links-wrapper.detail-head__links-wrapper
+                    a(href="#").featured__image-link
+                        //- +icon ('show-video')
+                        img(src="img/video-icon.png")
+                    a(href="#").featured__image-link
+                        img(src="img/3d-tour-icon.png")
+                        //- +icon ('tour')
+            .col-xs-12
+                .detail-head__name.detail-head__name--mobile.show-sm.banner-title.banner-title--small.banner-title--blue.
+                    40 t
+                .detail-head__text.detail-head__text--mobile.text-dft.text-dft--blue.
+                    Designed and built to satisfy <br>
+                    the highest demands for a super yacht...
+    .detail-links
+        .container
+            ul.detail-links__list
+                - var links = ["Features", "Gallery", "Specifications","Arrangment","Awards","News"];
+                for link in links
+                    li.detail-links__item
+                        a(href="#").detail-links__link= link
+            ul.detail-links__share-list
+                li.detail-links__item.detail-links__item--share
+                    .detail-links__link.detail-links__link--share.share-link Share
+                        .share-dropdown.share-dropdown--right
+                            .share-dropdown__wrapper
+                                .share-dropdown__title Share in socials
+                                .share-dropdown__list.clearfix
+                                    a(href="#").share-dropdown__social-link
+                                        +icon ('facebook')
+                                    a(href="#").share-dropdown__social-link
+                                        +icon ('tweater')
+                                    a(href="#").share-dropdown__social-link
+                                        +icon ('linkedin')
+                li.detail-links__item
+                    a(href="#").detail-links__link Enquiry
+    .detail-info
+        .container
+            .row
+                .col-md-5
+                    .text-title.detail-info__title.
+                        Features
+                    .detail-info__text-wrapper
+                        .sub-title.
+                            The successful 40T semi-custom serie is a masterpiece, <br>
+                            designed and built to satisfy the highest demands for a super yacht.
+                        p.
+                            She is the perfect balance between the necessities of life afloat and sheer luxury. The enclosed deckhouse accommodates an inside steering position and navigation centre and an upholstered seating area. Companionways lead forward to the main saloon and aft to the owner’s and gust’s accommodation. The main saloon is well lit through many windows in the superstructure and portlights in the hull. With a dining table to port and a large and comfortable sitting area to starboard, it is a comfortable place for relaxation and social activities.
+                    .detail-info__photos
+                        .row
+                            .detail-info__photos-big
+                                .detail-info__photo-wrap-big
+                                    img(src="img/upload/news-1.jpg")
+                            .detail-info__photos-small
+                                .detail-info__photo-wrap-small
+                                    img(src="img/upload/news-1.jpg")
+                            .detail-info__photos-small
+                                .detail-info__photo-wrap-small
+                                    img(src="img/upload/news-1.jpg")
+                .col-md-6.col-md-offset-1
+                    img(src="img/upload/detail-photo-1.jpg").detail-info__big-image
+                    .detail-info__text-wrapper.detail-info__text-wrapper--padding-mod
+                        p.
+                            In the stern is the owner’s suite with a double bed and a living area with L-shaped seating. Abundant natural light from the typically Jongert large stern windows gives this spectacular area a wonderfully light and airy feeling and enhances the natural glow of the beautifully crafted mahogany joinery. There is a large bathroom with a separate shower. Forward of the owner’s suite are three roomy guest cabins each with en-suite bathrooms. Forward of the saloon is the separate crew area with a professionally equipped galley, crew dinette, two crew cabins and independent access to the deck.
+                        p.
+                            The large cockpit offers comfortable seating for twelve. Next to the entrance to the deckhouse is the outside steering position with a beautifully crafted steering wheel. The hydraulic sail systems can be operated from here, affording easy handling for a small crew. From the helm there is an unobstructed view over the whole yacht. The platform on the stern is a masterpiece of Jongert design and engineering. Hydraulically operated, the normally flat platform converts into a stairway giving safe and easy access to the water or tender.
+
+.detail-gallery
+    .container
+        .text-title.detail-gallery__title.
+            40T  GALLERY
+        ul.detail-gallery__list-links.clearfix
+            li.detail-gallery__list-item
+                a(href="#gallery-1").detail-gallery__list-link.js-gallery-tabs.active.
+                    exterior
+            li.detail-gallery__list-item
+                a(href="#gallery-2").detail-gallery__list-link.js-gallery-tabs.
+                    interior
+            li.detail-gallery__list-item
+                a(href="https://www.youtube.com/watch?v=ivPYU4htmxU?fs=1&amp;autoplay=1").detail-gallery__list-link.js-show-pop-up-video.
+                    video
+            li.detail-gallery__list-item
+                a(href="#").detail-gallery__list-link.
+                    360 tour
+    .container
+        .row
+            .detail-gallery__body.active#gallery-1
+                .col-lg-6
+                    .detail-gallery__photo-wrap-big.js-fancybox(data-image="0" data-big-photo="img/upload/gallery-1.jpg")
+                        img(src="img/upload/gallery-1.jpg")
+                .col-lg-6
+                    .row
+                        .col-md-4
+                            .detail-gallery__photo-wrap-small.js-fancybox(data-image="1" data-big-photo="img/upload/gallery-2.jpg")
+                                img(src="img/upload/gallery-2.jpg")
+                        .col-md-4
+                            .detail-gallery__photo-wrap-small.js-fancybox(data-image="2" data-big-photo="img/upload/gallery-3.jpg")
+                                img(src="img/upload/gallery-3.jpg")
+                        .col-md-4.hide-sm
+                            a(href="#").detail-gallery__photo-wrap-small.detail-gallery__photo-wrap-small--show-all
+                                span show all photos
+                        .col-md-12
+                            .detail-gallery__photo-wrap-right-big.js-fancybox(data-image="3" data-big-photo="img/upload/gallery-wide.jpg")
+                                img(src="img/upload/gallery-wide.jpg")
+                        .col-md-4.show-sm
+                            a(href="#").detail-gallery__photo-wrap-small.detail-gallery__photo-wrap-small--show-all
+                                span show all photos
+            .detail-gallery__body#gallery-2
+                .col-md-6
+                    .detail-gallery__photo-wrap-big.js-fancybox(data-image="0" data-big-photo="img/upload/gallery-2.jpg")
+                        img(src="img/upload/gallery-2.jpg")
+                .col-md-6
+                    .row
+                        .col-md-4
+                            .detail-gallery__photo-wrap-small.js-fancybox(data-image="1" data-big-photo="img/upload/gallery-1.jpg")
+                                img(src="img/upload/gallery-1.jpg")
+                        .col-md-4
+                            .detail-gallery__photo-wrap-small.js-fancybox(data-image="2" data-big-photo="img/upload/gallery-3.jpg")
+                                img(src="img/upload/gallery-3.jpg")
+                        .col-md-4
+                            a(href="#").detail-gallery__photo-wrap-small.detail-gallery__photo-wrap-small--show-all
+                                span show all photos
+                        .col-md-12
+                            .detail-gallery__photo-wrap-right-big.js-fancybox(data-image="3" data-big-photo="img/upload/gallery-wide.jpg")
+                                img(src="img/upload/gallery-wide.jpg")
+.specifications
+    .specifications__wrapper(style="background:url(img/upload/specifications.jpg);background-size:cover;")
+        .container
+            .specifications__title.text-title.text-title--white.
+                Key specifications
+            .specifications__list.clearfix
+                .specifications__item
+                    .specifications__item-title.
+                        Length
+                    .specifications__text
+                        span 41
+                        | meters
+                .specifications__item
+                    .specifications__item-title.
+                        Beam
+                    .specifications__text
+                        span 7,88
+                        | meters
+                .specifications__item
+                    .specifications__item-title.
+                        Delivery
+                    .specifications__text
+                        span 2004
+                        | year
+                .specifications__item
+                    .specifications__item-title.
+                        Cruising speed
+                    .specifications__text
+                        span 10
+                        | knots
+            a(href="#").btn-rnd.btn-rnd--gold.btn-rnd--arrow.js-show-specif
+                span all specificasions
+    .specifications-detail
+        .container
+
+            .row
+                .col-md-7
+                    .specifications-detail__table
+                        .specifications-detail__table-head.
+                            Lorem Ipsum
+                        .specifications-detail__table-body
+                            .specifications-detail__table-row
+                                .specifications-detail__table-column.
+                                    Delivery
+                                .specifications-detail__table-column.
+                                    114.75 tons at half load
+                            .specifications-detail__table-row
+                                .specifications-detail__table-column.
+                                    Category
+                                .specifications-detail__table-column.
+                                    One (1) Scania
+                            .specifications-detail__table-row
+                                .specifications-detail__table-column.
+                                    Type of yacht
+                                .specifications-detail__table-column.
+                                    28kW
+                            .specifications-detail__table-row
+                                .specifications-detail__table-column.
+                                    Length over all (m)
+                                .specifications-detail__table-column.
+                                    11 knots on engine
+                    .specifications-detail__table
+                        .specifications-detail__table-head.
+                            Lorem Ipsum
+                        .specifications-detail__table-body
+                            .specifications-detail__table-row
+                                .specifications-detail__table-column.
+                                    Displacement
+                                .specifications-detail__table-column.
+                                    Jongert Design Team
+                            .specifications-detail__table-row
+                                .specifications-detail__table-column.
+                                    Main Engine
+                                .specifications-detail__table-column.
+                                    Jongert Design Team
+                            .specifications-detail__table-row
+                                .specifications-detail__table-column.
+                                    Generator Set
+                                .specifications-detail__table-column.
+                                    Steel
+            a(href="#").specifications-detail__close.js-close-specif
+                +icon ('cross')
+section.arrangement
+    .container
+        .text-title.arrangement__title.
+            General Arrangement
+        ul.arrangement__list-links.clearfix
+            li.detail-gallery__list-item
+                a(href="#slider-1").detail-gallery__list-link.js-slider-tabs.active.
+                    plan
+            li.detail-gallery__list-item
+                a(href="#slider-2").detail-gallery__list-link.js-slider-tabs.
+                    profile
+        .arrangement__slider-tab-wrapper.active#slider-1
+            .arrangement__slider-wrapper
+                .arrangement__slider-arrows
+                    a(href="#" data-slider="slickPrev").js-slider-arrow.arrangement__slider-arrow.arrangement__slider-arrow--prev
+                        +icon('left-arrow')
+                    a(href="#" data-slider="slickNext").js-slider-arrow.arrangement__slider-arrow.arrangement__slider-arrow--next
+                        +icon('right-arrow')
+                .js-arrangement
+                    .arrangement__slide
+                        img(src="img/upload/slide-1.jpg")
+                    .arrangement__slide
+                        img(src="img/upload/slide-1.jpg")
+        .arrangement__slider-tab-wrapper#slider-2
+            .arrangement__slider-wrapper
+                .arrangement__slider-arrows
+                    a(href="#" data-slider="slickPrev").js-slider-arrow.arrangement__slider-arrow.arrangement__slider-arrow--prev
+                        +icon('left-arrow')
+                    a(href="#" data-slider="slickNext").js-slider-arrow.arrangement__slider-arrow.arrangement__slider-arrow--next
+                        +icon('right-arrow')
+                .js-arrangement
+                    .arrangement__slide
+                        img(src="img/upload/slide-2.jpg")
+                    .arrangement__slide
+                        img(src="img/upload/slide-2.jpg")
+section.latest-news.latest-news--detail-page
+    .container
+        .banner-title.banner-title--xsmall.latest-news__title.
+            Latest news
+        .row
+            .col-md-4.latest-news__item
+                a(href="#").latest-news__image-wrap.news-link
+                    img(src="img/upload/news-1.jpg" title="news" alt="news image").latest-news__image
+                    span.latest-news__news-type.
+                        news
+                .latest-news__date.
+                    June, 25, 2016
+                a(href="#").latest-news__preview.
+                    Successful Jongert Mallorca inauguration during Superyacht Cup
+            .col-md-4.latest-news__item
+                a(href="#").latest-news__image-wrap.videos
+                    img(src="img/upload/news-2.jpg" title="news" alt="news image").latest-news__image
+                    span.latest-news__news-type.
+                        videos
+                    span.latest-news__icon
+                .latest-news__date.
+                    June, 25, 2016
+                a(href="#").latest-news__preview.
+                    Tommy: 18 meters of distinctive Jongert Motor Yacht craftsmanship
+            .col-md-4.latest-news__item
+                a(href="#").latest-news__image-wrap.events
+                    img(src="img/upload/news-3.jpg" title="news" alt="news image").latest-news__image
+                    span.latest-news__news-type.
+                        events
+                    span.latest-news__events-info.
+                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.
+                    span.latest-news__events-format.
+                        PDF
+
+                .latest-news__date.
+                    June, 25, 2016
+                a(href="#").latest-news__preview.
+                    Tommy: 18 meters of distinctive Jongert Motor Yacht craftsmanship
+section.share
+    .container
+        .row
+            .col-lg-6.js-height
+                .share-social
+                    .share-social__title.text-title.text-title--white.
+                        Share in socials
+                    .footer__social-links.clearfix
+                        a(href="#").footer__social-link
+                            +icon ('facebook')
+                        a(href="#").footer__social-link
+                            +icon ('tweater')
+                        a(href="#").footer__social-link
+                            +icon ('linkedin')
+            .col-lg-6.js-height
+                .contacts-us
+                    .contacts-us__title.text-title.
+                        Please contact us <br>
+                        for more information:
+                    .contacts-us__info-wrap
+                        .contacts-us__info
+                            | Email:
+                            a(href="mailto:info@jongert.com")
+                                | &nbsp info@jongert.com
+                        .contacts-us__info
+                            | Phone:
+                            a(href="tel:+31(0) 227 549 400")
+                                | &nbsp +31(0) 227 549 400
+                        a(href="#").btn-rnd.btn-rnd--gold.contacts-us__btn.
+                            Enqiry
+section.yachts-list
+    .container
+        .yachts-list__title.text-title.
+            All traditionals yachts
+        .row
+            .col-lg-2.col-md-4
+                a(href="#").yachts-list__item
+                    span.yachts-list__name.
+                        2400 CR
+                    img(src="img/upload/yacht-1.jpg" alt="traditional yacht").yachts-list__image
+            .col-lg-2.col-md-4
+                a(href="#").yachts-list__item
+                    span.yachts-list__name.
+                        2400 CR
+                    img(src="img/upload/yacht-2.jpg" alt="traditional yacht").yachts-list__image
+            .col-lg-2.col-md-4
+                a(href="#").yachts-list__item
+                    span.yachts-list__name.
+                        2400 CR
+                    img(src="img/upload/yacht-3.jpg" alt="traditional yacht").yachts-list__image
+            .col-lg-2.col-md-4
+                a(href="#").yachts-list__item
+                    span.yachts-list__name.
+                        2400 CR
+                    img(src="img/upload/yacht-4.jpg" alt="traditional yacht").yachts-list__image

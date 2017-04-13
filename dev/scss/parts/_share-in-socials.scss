@@ -1,0 +1,37 @@
+.share-in-socials{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 0;
+    &__title{
+        font-family: $opensanscondbold;
+        font-size: 15px;
+        line-height: 35px;
+        color: $gold;
+        text-transform: uppercase;
+        margin-right: 35px;
+    }
+    &__inner{
+        display: flex;
+        list-style: none;
+    }
+    &__item{
+        margin-right: 10px;
+        a{
+            display: block;
+            width: 35px;
+            height: 35px;
+            svg {
+                fill: $gold;
+                width: 35px;
+                height: 35px;
+                transition: fill 0.3s ease;
+            }
+            &:hover {
+                svg {
+                    fill: #9b7b4f;
+                    transition: fill 0.3s ease;
+                }
+            }
+        }
+    }
+}

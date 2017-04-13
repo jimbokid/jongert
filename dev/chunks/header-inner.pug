@@ -1,0 +1,211 @@
+include svg-gradient.html
+header.wrapper.header#header
+    .container.header__container
+        a(href="index.html").header__logo
+            i.header__logo-icon
+                +icon ('logo-late')
+        .header__mobile-right-wrap.clearfix
+            a(href="#").header__mobile-menu.js-show-menu
+                span
+            a(href="#").header__mobile-search.js-show-search
+                //- +icon ('search')
+                i.zoom
+                    +icon ('search')
+                i.cross
+                    +icon ('cross')
+
+        .header__menu-wrapper
+            ul.header__menu.clearfix
+                li.header__menu-item
+                    a(href="sailing-yachts.html").header__menu-link.js-show-dropdown.
+                        Sailing yachts
+                li.header__menu-item
+                    a(href="#").header__menu-link.
+                        Motor yachts
+                li.header__menu-item
+                    a(href="#").header__menu-link.
+                        Service
+                li.header__menu-item
+                    a(href="#").header__menu-link.
+                        Refit
+                li.header__menu-item
+                    a(href="#").header__menu-link.
+                        About
+                li.header__menu-item
+                    a(href="#").header__menu-link.
+                        News
+        .header__right-wrap
+            a(href="#").btn-rnd.header__btn.
+                Contact
+            a(href="#").header__search-btn.js-show-search
+                i.zoom
+                    +icon ('search')
+                i.cross
+                    +icon ('cross')
+
+.mobile-menu-wrapper
+    ul.mobile-menu
+        li.mobile-menu__item
+            a(href="#").mobile-menu__link.
+                Sailing yachts
+            ul.mobile-menu__sub-menu
+                li.mobile-menu__sub-menu-item
+                    a(href="#").mobile-menu__sub-menu-link.js-show-mobile-sub-menu
+                        | Perfomance
+                        +icon ('down-arrow')
+                    ul.mobile-menu__down-menu
+                        li.mobile-menu__down-menu-item
+                            a(href="#").mobile-menu__down-menu-link.
+                                3200 P
+
+                li.mobile-menu__sub-menu-item
+                    a(href="#").mobile-menu__sub-menu-link.js-show-mobile-sub-menu
+                        | Traditional
+                        +icon ('down-arrow')
+                    ul.mobile-menu__down-menu
+                        li.mobile-menu__down-menu-item
+                            a(href="#").mobile-menu__down-menu-link.
+                                2400 CR
+                        li.mobile-menu__down-menu-item
+                            a(href="#").mobile-menu__down-menu-link.
+                                2900 CR
+                        li.mobile-menu__down-menu-item
+                            a(href="#").mobile-menu__down-menu-link.
+                                3200 CR
+                        li.mobile-menu__down-menu-item
+                            a(href="#").mobile-menu__down-menu-link.
+                                Fleet
+                li.mobile-menu__sub-menu-item
+                    a(href="#").mobile-menu__sub-menu-link.js-show-mobile-sub-menu
+                        | Cruising
+                        +icon ('down-arrow')
+                    ul.mobile-menu__down-menu
+                        li.mobile-menu__down-menu-item
+                            a(href="#").mobile-menu__down-menu-link.
+                                31 TP
+                        li.mobile-menu__down-menu-item
+                            a(href="#").mobile-menu__down-menu-link.
+                                40 T
+                        li.mobile-menu__down-menu-item
+                            a(href="#").mobile-menu__down-menu-link.
+                                47 T
+                        li.mobile-menu__down-menu-item
+                            a(href="#").mobile-menu__down-menu-link.
+                                Fleet
+                li.mobile-menu__sub-menu-item
+                    a(href="#").mobile-menu__sub-menu-link.js-show-mobile-sub-menu
+                        | Specials
+                        +icon ('down-arrow')
+                    ul.mobile-menu__down-menu
+                        li.mobile-menu__down-menu-item
+                            a(href="#").mobile-menu__down-menu-link.
+                                3200 Classic
+                        li.mobile-menu__down-menu-item
+                            a(href="#").mobile-menu__down-menu-link.
+                                45C Wellenreiter
+                        li.mobile-menu__down-menu-item
+                            a(href="#").mobile-menu__down-menu-link.
+                                5200 Flybridge
+        li.mobile-menu__item
+            a(href="#").mobile-menu__link.
+                Motor yachts
+        li.mobile-menu__item
+            a(href="#").mobile-menu__link.
+                Service
+        li.mobile-menu__item
+            a(href="#").mobile-menu__link.
+                Refit
+        li.mobile-menu__item
+            a(href="#").mobile-menu__link.
+                About
+        li.mobile-menu__item
+            a(href="#").mobile-menu__link.
+                News
+        li.mobile-menu__item
+            a(href="#").mobile-menu__link.
+                Contact
+.search-wrapper
+    .search-overlay
+    .container.search-wrapper__container
+        .search-pop-up
+            form
+                .search-pop-up__form-group
+                    input(type="text" placeholder="search").search-pop-up__input.gold
+                    button(type="submit").search-pop-up__submit
+                        +icon ('search')
+.dropdown-menu
+    .dropdown-menu__wrapper
+        .container
+            .row
+                .col-sm-3.dropdown-menu__item
+                    .dropdown-menu__title.
+                        Perfomance
+                    a(href="#").dropdown-menu__link
+                        span.dropdown-menu__image-wrap
+                            img(src="img/upload/menu-1.jpg" alt="Perfomance")
+                        span.dropdown-menu__name.
+                            3200 P
+                .col-sm-3.dropdown-menu__item
+                    .dropdown-menu__title.
+                        Traditional
+                    a(href="#").dropdown-menu__link
+                        span.dropdown-menu__image-wrap
+                            img(src="img/upload/menu-2.jpg" alt="Perfomance")
+                        span.dropdown-menu__name.
+                            2400 CR
+                    a(href="#").dropdown-menu__link
+                        span.dropdown-menu__image-wrap
+                            img(src="img/upload/menu-3.jpg" alt="Perfomance")
+                        span.dropdown-menu__name.
+                            2900 CR
+                    a(href="#").dropdown-menu__link
+                        span.dropdown-menu__image-wrap
+                            img(src="img/upload/menu-4.jpg" alt="Perfomance")
+                        span.dropdown-menu__name.
+                            3200 CR
+                    a(href="#").dropdown-menu__link
+                        span.dropdown-menu__image-wrap
+                            img(src="img/upload/menu-5.jpg" alt="Perfomance")
+                        span.dropdown-menu__name.
+                            Fleet
+                .col-sm-3.dropdown-menu__item
+                    .dropdown-menu__title.
+                        Cruising
+                    a(href="#").dropdown-menu__link
+                        span.dropdown-menu__image-wrap
+                            img(src="img/upload/menu-6.jpg" alt="Perfomance")
+                        span.dropdown-menu__name.
+                            31 TP
+                    a(href="#").dropdown-menu__link
+                        span.dropdown-menu__image-wrap
+                            img(src="img/upload/menu-7.jpg" alt="Perfomance")
+                        span.dropdown-menu__name.
+                            40 T
+                    a(href="#").dropdown-menu__link
+                        span.dropdown-menu__image-wrap
+                            img(src="img/upload/menu-8.jpg" alt="Perfomance")
+                        span.dropdown-menu__name.
+                            47 T
+                    a(href="#").dropdown-menu__link
+                        span.dropdown-menu__image-wrap
+                            img(src="img/upload/menu-9.jpg" alt="Perfomance")
+                        span.dropdown-menu__name.
+                            Fleet
+                .col-sm-3.dropdown-menu__item
+                    .dropdown-menu__title.
+                        Specials
+                    a(href="#").dropdown-menu__link
+                        span.dropdown-menu__image-wrap
+                            img(src="img/upload/menu-10.jpg" alt="Perfomance")
+                        span.dropdown-menu__name.
+                            3200 Classic
+                    a(href="#").dropdown-menu__link
+                        span.dropdown-menu__image-wrap
+                            img(src="img/upload/menu-11.jpg" alt="Perfomance")
+                        span.dropdown-menu__name.
+                            45C Wellenreiter
+                    a(href="#").dropdown-menu__link
+                        span.dropdown-menu__image-wrap
+                            img(src="img/upload/menu-12.jpg" alt="Perfomance")
+                        span.dropdown-menu__name.
+                            5200 Flybridge

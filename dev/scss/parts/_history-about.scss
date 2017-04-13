@@ -1,0 +1,68 @@
+.history-about{
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0 100px;
+    &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 120%;
+        width: 100%;
+        height: 100%;
+        //@include position(absolute,0 null null 30%);
+        background: $lightgrey;
+        width: 100%;
+        height: 100%;
+        transform: skewX(19deg) translateX(617px);
+        transform-origin: 0 0;
+        z-index: -1;
+    }
+    &--title{
+        color: $gold;
+    }
+    &-item{
+        &--img{
+
+        }
+        &--title{
+            color: $gold;
+        }
+        &--text{
+            font-family: $opensanscondlight;
+        }
+    }
+}
+
+
+.history-about-timeline{
+    position: relative;
+    &:before{
+        position: absolute;
+        top: 0;
+        right: 50%;
+        display: block;
+        width: 2px;
+        height: 100%;
+        content: '';
+        background: $gold;
+    }
+    &__item{
+        position: relative;
+        margin-bottom: 100px;
+        &--arrow{
+
+        }
+        &--mobile{
+            @media (min-width: $screen-sm-max) {
+                display: none;
+            }
+        }
+        &--mobile-hide{
+            //display: none;
+            @media (max-width: $screen-sm) {
+                display: none;
+            }
+        }
+    }
+}
+
